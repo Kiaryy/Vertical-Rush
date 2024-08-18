@@ -10,7 +10,7 @@ def clamp(value, min, max):
         return max
     return value
 
-def map(value, min, max, targetMin, targetMax):
+def remap(value, min, max, targetMin, targetMax):
     """Remaps a value from one range to other
     
     Args:
