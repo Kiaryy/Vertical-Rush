@@ -1,7 +1,7 @@
 import pygame
 from utils import resource_path
-from utils import clamp
 pygame.init()
+
 
 class playerObj:
     def __init__(self, display):
@@ -42,8 +42,7 @@ class playerObj:
             self.x = 400
         
         if self.y >= 600:
-            self.y = 400
-            self.velY = 0
+            self.dead = True
         
         if self.jump and not self.dead:
             self.velY = 0.2 

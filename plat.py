@@ -19,7 +19,7 @@ class platform:
             print(f"{self.x} {self.y}")
     
     def draw(self):
-        pygame.draw.rect(self.display, (0, 155, 150), (self.x, self.y, 50, 25))
+        pygame.draw.rect(self.display, (0, 155, 150), (self.x, self.y, 50, 10))
         pygame.draw.rect(self.display, (255, 0, 0), (self.x, self.y, 50, 2))
     
     def move(self):
